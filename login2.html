@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      
+            <link rel="stylesheet" href="style.css">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>
+            Log in 2
+        </title>
+    </head>
+    <body>
+    <div class="login-form">
+        <div class="form-title">
+            Member Login
+        </div>
+        <div class="form-input">
+            <label >Username:</label><input type=" text" id="username" placeholder="Enter Email" name="name" minlength="5"/>
+
+      </div>
+ 
+    <div class="form-input">
+        <label >Password:</label><input type=" text" id="password" placeholder="Password" minlength="5"/>
+
+  </div>
+
+    <div class="captcha">
+       
+</br>
+      <div class="form-input">
+        <div class="btn">
+        <button id="btn_submit" value="Submit">Login</button>
+       </div>
+    </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center pb-4">
+        <p class="mb-0-me-2">Don't have an account?</p>
+        <div class="create_new">
+        <button type="button" class="btn-btn-outline-danger">Create new</button>
+    </div>
+        
+      </div>
+</div>
+<script>
+    $(document).ready(function(){
+       
+    $("#btn_submit").click(function(){
+        var username = $("#username").val();
+        var password = $("#password").val();
+        if (username == "pedrocruz@gmail.com" && password =="1234"){
+
+            alert("pedro cruz ako");
+        }
+        else if (username == "juanactor@gmail.com"&& password =="3456"){
+
+            alert("juan actor ako");
+        }
+        
+        else if (username == "avalnator@gmail.com"&& password =="6789"){
+
+        alert("aval nator ako");
+        }
+        else 
+        {
+            alert("error")
+        }
+           
+
+
+
+
+
+    })
+
+
+
+    })
+  
+
+</script>
+    </body>
+</html>
